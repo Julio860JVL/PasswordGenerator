@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Password Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Password Generator</h1>
+
+  <div class="options">
+    <div class="option">
+      <div class="option-label">Upper case:</div>
+      <div class="number-control">
+        <button onclick="decreaseOptionValue('uppercase')">-</button>
+        <input id="uppercase" type="number" value="5" readonly>
+        <button onclick="increaseOptionValue('uppercase')">+</button>
+      </div>
+    </div>
+
+    <div class="option">
+      <div class="option-label">Lower case:</div>
+      <div class="number-control">
+        <button onclick="decreaseOptionValue('lowercase')">-</button>
+        <input id="lowercase" type="number" value="5" readonly>
+        <button onclick="increaseOptionValue('lowercase')">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="options">
+    <div class="option">
+      <div class="option-label">Numbers:</div>
+      <div class="number-control">
+        <button onclick="decreaseOptionValue('numbers')">-</button>
+        <input id="numbers" type="number" value="5" readonly>
+        <button onclick="increaseOptionValue('numbers')">+</button>
+      </div>
+    </div>
+
+    <div class="option">
+      <div class="option-label">Symbols:</div>
+      <div class="number-control">
+        <button onclick="decreaseOptionValue('symbols')">-</button>
+        <input id="symbols" type="number" value="5" readonly>
+        <button onclick="increaseOptionValue('symbols')">+</button>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="generatePassword()">Generate Password</button>
+
+  <div id="passwords"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

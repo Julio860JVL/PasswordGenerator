@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.option-label {
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.number-control {
+  display: flex;
+  align-items: center;
+}
+
+.number-control button {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.number-control input[type="number"] {
+  flex: 1;
+  padding: 5px;
+  width: 60px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#passwords {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.password {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2px;
+  font-size: 24px;
+}
+
+.uppercase {
+  color: #ffffff;
+}
+
+.lowercase {
+  color: #00ff00;
+}
+
+.number {
+  color: #0000ff;
+}
+
+.symbol {
+  color: #ff0000;
+}
+
+.copy-button {
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+}
